@@ -1,2 +1,9 @@
 ### dependency
 streamlit
+pandas
+nltk
+altair
+numpy
+seaborn
+matplotlib
+streamlit
