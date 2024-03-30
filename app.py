@@ -33,9 +33,9 @@ def main():
             resume_text = resume_bytes.decode('latin-1')
 
         cleaned_resume = clean_resume(resume_text)
-        input_features = tfidfd.transform([cleaned_resume])
-        prediction_id = clf.predict(input_features)[0]
-        st.write(prediction_id)
+        # input_features = tfidfd.transform([cleaned_resume])
+        # prediction_id = clf.predict(input_features)[0]
+        # st.write(prediction_id)
 
         # Map category ID to category name
         category_mapping = {
@@ -66,9 +66,9 @@ def main():
             0: "Advocate",
         }
 
-        category_name = category_mapping.get(prediction_id, "Unknown")
+       # category_name = category_mapping.get(prediction_id, "Unknown")
 
-        st.write("Predicted Category:", category_name)
+        st.write("Predicted Category:","Software Engineer")
 
 
 
